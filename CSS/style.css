@@ -406,7 +406,7 @@ nav ul li a:focus-visible {
 .landing {
     min-height: 100vh;
     background-color: var(--main-black);
-    background-image: url(../images/landing2.png);
+    background-image: url(images/landing2.png);
     background-size: cover;
     position: relative;
     transition: background-image 0.5s ease-in-out;
@@ -1108,7 +1108,7 @@ nav ul li a:focus-visible {
     content: attr(data-progress);
     position: absolute;
     top: -30px;
-    right: 0;
+    right: 10px;
     transform: translateX(0);
     padding: 4px;
     border-radius: 4px;
