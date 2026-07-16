@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasper Template</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <!--main template css file-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!--Js-->
+    <script src="main.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Preloader-->
+    <link rel="preload" as="image" href="images/landing.png">
+    <link rel="preload" as="image" href="images/landing2.png">
+    <link rel="preload" as="image" href="images/landing3.png">
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <i class="bi bi-list" id="toggle-menu"></i>
+                <ul>
+                    <li> <a href="#land" class="links">Home</a></li>
+                    <li> <a href="#Services" class="links">Services</a></li>
+                    <li> <a href="#Portfolio" class="links">Portfolio</a></li>
+                    <li> <a href="#About" class="links">About</a></li>
+                    <li> <a href="#Pricing" class="links">Pricing</a></li>
+                    <li> <a href="#Contact" class="links">Contact</a></li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search" id="search"></i>
+                    <div class="boxsearch">
+                        <input type="search" placeholder="search" id="search-input">
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Landing -->
+    <div class="landing" id="land">
+        <div class="overlay"></div>
+        <div class="text">
+            <div class="content">
+                <h2>
+                    HELLO WORLD !
+                </h2>
+                <h2>
+                    WE ARE KASPER,WE MAKE ART.
+                </h2>
+                <p>We do not just build products. We spark movements. Every pixel we shape carries a pulse, and every
+                    idea we launch aims
+                    to shift how you see the world. Step past the ordinary and join a space where imagination meets
+                    execution.</p>
+            </div>
+        </div>
+        <div class="move">
+            <ul>
+                <li class="bullet" data-bg='url(../images/landing.png)'></li>
+                <li class="bullet active" data-bg='url(../images/landing2.png)'></li>
+                <li class="bullet" data-bg='url(../images/landing3.png)'></li>
+            </ul>
+        </div>
+    </div>
+    <!-- End Landing -->
+    <!--Start Services-->
+    <div class="services" id="Services">
+        <div class="contianer">
+            <div class="main-head">
+                <h2>SERVICES</h2>
+                <p>All services we provide are guaranteed to exceed your expectations.</p>
+            </div>
+            <div class="service-content">
+                <div class="srv">
+                    <i class="bi bi-window"></i>
+                    <div class="text">
+                        <h3>Web Design</h3>
+                        <p>design creative web design and mobile responsive design
+                            with avialabilty to transform into app.
+                        </p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="bi bi-gear"></i>
+                    <div class="text">
+                        <h3>Fix Errors</h3>
+                        <p>fix errors and bugs in your site or system
+                            and add some new features on needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="bi bi-pencil-square"></i>
+                    <div class="text">
+                        <h3>UI/UX</h3>
+                        <p>design UI/UX Templates and even transfrom your design into code
+                            even perform existing templates.
+                        </p>
+                    </div>
+                </div>
+                <div class="srv">
+                    <i class="bi bi-person-raised-hand"></i>
+                    <div class="text">
+                        <h3>Trainings</h3>
+                        <p>provide trainings on web design and programming for beginners,intermediate and advanced.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Services-->
+    <!--Start Design-->
+    <div class="design">
+        <div class="text">
+            <h2>OUR DESIGN COMES WITH...</h2>
+            <ul>
+                <li>Responsive Design</li>
+                <li>Modern And Clean Design</li>
+                <li>Clean Code</li>
+                <li>Browser Friendly</li>
+            </ul>
+        </div>
+    </div>
+    <!--End Design-->
+    <!--Start Portfolio-->
+    <div class="portfolio" id="Portfolio">
+        <div class="container">
+            <div class="main-head">
+                <h2>PORTFOLIO</h2>
+                <p>if you do not like what you see,change it.</p>
+            </div>
+            <ul class="shuffle">
+                <li class="active" id="all">ALL</li>
+                <li id="soft">SOFTWARE DEVELOPMENT</li>
+                <li id="web">WEB</li>
+                <li id="ui">UI/UX</li>
+            </ul>
+        </div>
+        <div class="imgs">
+            <div class="box" data-category="all">
+                <img src="images/shuffle1.jpg" alt="shuffle1">
+                <div class="caption">
+                    <h4>24/7 Team Support</h4>
+                    <p>ALL</p>
+                </div>
+            </div>
+            <div class="box" data-category="soft">
+                <img src="images/shuffle2.jpg" alt="shuffle2">
+                <div class="caption">
+                    <h4>Full Software Design</h4>
+                    <p>SOFTWARE DEVELOPMENT</p>
+                </div>
+            </div>
+            <div class="box" data-category="ui">
+                <img src="images/shuffle3.jpg" alt="shuffle3">
+                <div class="caption">
+                    <h4>UI/UX Template Implementation</h4>
+                    <p>UI/UX</p>
+                </div>
+            </div>
+            <div class="box" data-category="all">
+                <img src="images/shuffle4.jpg" alt="shuffle4">
+                <div class="caption">
+                    <h4>Project Specified Team</h4>
+                    <p>ALL</p>
+                </div>
+            </div>
+            <div class="box" data-category="soft">
+                <img src="images/shuffle5.jpg" alt="shuffle5">
+                <div class="caption">
+                    <h4>Bug Fixing or Redevelopment</h4>
+                    <p>SOFTWARE DEVELOPMENT</p>
+                </div>
+            </div>
+            <div class="box" data-category="web">
+                <img src="images/shuffle6.jpg" alt="shuffle6">
+                <div class="caption">
+                    <h4>Web Design</h4>
+                    <p>WEB</p>
+                </div>
+            </div>
+            <div class="box" data-category="web">
+                <img src="images/shuffle7.jpg" alt="shuffle7">
+                <div class="caption">
+                    <h4>ReDesign Website with Responsive</h4>
+                    <p>WEB</p>
+                </div>
+            </div>
+            <div class="box" data-category="ui">
+                <img src="images/shuffle8.jpg" alt="shuffle8">
+                <div class="caption">
+                    <h4>UI/UX Design</h4>
+                    <p>UI/UX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Portfolio-->
+    <!--Start Video-->
+    <div class="video">
+        <div class="text">
+            <h2>Awesome Video Here</h2>
+            <p>Its All You Need</p>
+        </div>
+        <video autoplay muted loop>
+            <source src="images/awesome.mp4" type="video/mp4">
+        </video>
+    </div>
+    <!--End Video-->
+    <!--Start About-->
+    <div class="about" id="About">
+        <div class="main-head">
+            <h2>ABOUT US</h2>
+            <p>Start small, but with big ambitious and creative team to be....</p>
+        </div>
+        <img src="images/Screens.png">
+    </div>
+    <!--End About-->
+    <!--Start Stats-->
+    <div class="stats">
+        <div class="container">
+            <div class="box">
+                <div class="diamond">
+                    <i class="bi bi-people-fill"></i>
+                </div>
+                <div class="number">1,586</div>
+                <p>Clients</p>
+            </div>
+            <div class="box">
+                <div class="diamond">
+                    <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div class="number">600</div>
+                <p>Projects</p>
+            </div>
+            <div class="box">
+                <div class="diamond">
+                    <i class="bi bi-award-fill"></i>
+                </div>
+                <div class="number">15</div>
+                <p>Awards</p>
+            </div>
+        </div>
+    </div>
+    <!--End Stats-->
+    <!--Start Skills-->
+    <div class="skills">
+        <div class="container">
+            <div class="testimonials">
+                <h3>Testimonials</h3>
+                <p>Not just a clients,its a family</p>
+                <div class="content">
+                    <img src="images/person.jpg" alt="testimonials">
+                    <div class="text">
+                        Great company to work with,they are always ready to help you.
+                        <p>John Doe</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <img src="images/person.jpg" alt="testimonials">
+                    <div class="text">
+                        The team is very experienced and creative,always develop and improve.
+                        <p>Scott Smith</p>
+                    </div>
+                </div>
+            </div>
+            <div class="our-skills">
+                <h3>Our Skills</h3>
+                <p>our skills are our strength</p>
+                <div class="prog-content">
+                    <div class="prog">
+                        <h4>Adobe</h4>
+                        <span style="width:90%" data-progress="80%"></span>
+                    </div>
+                    <div class="prog">
+                        <h4>HTML & CSS</h4><span style="width:90%" data-progress="90%"></span>
+                    </div>
+                    <div class="prog">
+                        <h4>JavaScript</h4>
+                        <span style="width:85%" data-progress="85%"></span>
+                    </div>
+                    <div class="prog">
+                        <h4>PHP</h4>
+                        <span style="width:84%" data-progress="84%"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Skills-->
+    <!--Start Quote-->
+    <div class="quote">
+        <div class="container">
+            <q>ACCURACY IS THE FIRST STEP TOWARDS SUCCESS</q>
+            <span>Mahmoud Elagmy</span>
+        </div>
+    </div>
+    <!--End Quote-->
+    <!--Start Pricing-->
+    <div class="pricing" id="Pricing">
+        <div class="container">
+            <div class="main-head">
+                <h2>PRICING</h2>
+                <p>Choose the best plan for you</p>
+            </div>
+            <div class="pricing-content">
+                <div class="plan">
+                    <h3>BASIC</h3>
+                    <div class="text">
+                        <span class="dollar">$</span>
+                        <span class="amount">49</span>
+                        <span class="time">/Per Month</span>
+                    </div>
+                    <ul>
+                        <li>UI & UX Design</li>
+                        <li>FrontEnd Development</li>
+                        <li>Add Features</li>
+                        <li>Support 24/7</li>
+                    </ul>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <h3>PREMIUM</h3>
+                    <div class="text">
+                        <span class="dollar">$</span>
+                        <span class="amount">59</span>
+                        <span class="time">/Per Month</span>
+                    </div>
+                    <ul>
+                        <li>UI & UX Design</li>
+                        <li>FrontEnd Development</li>
+                        <li>ReDesigning Website</li>
+                        <li>Support 24/7</li>
+                    </ul>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <h3>PRO</h3>
+                    <div class="text">
+                        <span class="dollar">$</span>
+                        <span class="amount">69</span>
+                        <span class="time">/Per Month</span>
+                    </div>
+                    <ul>
+                        <li>UI & UX Design</li>
+                        <li>FrontEnd Development</li>
+                        <li>DB&amp;BackEnd</li>
+                        <li>Support 24/7</li>
+                    </ul>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+                <div class="plan">
+                    <h3>PLATINUM</h3>
+                    <div class="text">
+                        <span class="dollar">$</span>
+                        <span class="amount">99</span>
+                        <span class="time">/Per Month</span>
+                    </div>
+                    <ul>
+                        <li>Full Website&amp;App</li>
+                        <li>Full Admin Panel</li>
+                        <li>One Domain Free</li>
+                        <li>Support 24/7</li>
+                    </ul>
+                    <div class="btn">
+                        <a href="#">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Pricing-->
+    <!--Start Subscribe-->
+    <div class="subscribe">
+        <div class="container">
+            <form>
+                <i class="bi bi-envelope"></i>
+                <input type="email" id="email" name="email">
+                <label for="email" class="floating">Your Email</label>
+                <input type="submit" value="Subscribe">
+            </form>
+            <p>
+                Subscribe to our updates to get our news & updates
+            </p>
+        </div>
+    </div>
+    <!--End Subscribe-->
+    <!--Start Contact-->
+    <div class="contact" id="Contact">
+        <div class="main-head">
+            <h2>CONTACT US</h2>
+            <p>Don't Hesitate To Contact Us</p>
+        </div>
+        <div class="container">
+            <div class="contact-content">
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" placeholder="Your Email">
+                    <textarea placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+                </form>
+            </div>
+            <div class="info">
+                <div class="data">
+                    <h4>Get In Touch</h4>
+                    <a href="mailto:mahmoudelagmy187@gmail.com">
+                        <i class="bi bi-envelope"></i>
+                        mahmoudelagmy187@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/Mahmoud%20%Elagmy-3a7b6120b/">
+                        <i class="bi bi-linkedin"></i>
+                        Mahmoud Elagmy
+                    </a>
+                    <a href="https://github.com/Mahmoud-Elagmy">
+                        <i class="bi bi-github">
+                        </i>
+                        Mahmoud-Elagmy
+                    </a>
+                </div>
+                <div class="data">
+                    <h4>Call Us</h4>
+                    <a href="tel:01100000000">
+                        <i class="bi bi-telephone"></i>
+                        01100000000
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Contact-->
+    <!--Start Footer-->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 <span>Mahmoud Elagmy</span> All Right Reserved</p>
+        </div>
+    </footer>
+    <!--End Footer-->
+</body>
+
+</html>
