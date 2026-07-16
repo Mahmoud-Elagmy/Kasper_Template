@@ -18,6 +18,9 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+html,body {
     overflow-x: hidden;
 }
 
@@ -1105,12 +1108,11 @@ nav ul li a:focus-visible {
 }
 
 .skills .our-skills .prog-content .prog span::after {
-    content: attr(data-progress);
+   content: attr(data-progress);
     position: absolute;
     top: -30px;
-    right: 10px;
-    transform: translateX(0);
-    padding: 4px;
+    right: 0; 
+    padding: 4px 8px; 
     border-radius: 4px;
     background-color: var(--main-black);
     color: white;
@@ -1119,13 +1121,12 @@ nav ul li a:focus-visible {
 }
 
 .skills .our-skills .prog-content .prog span::before {
-    content: "";
+   content: "";
     position: absolute;
     top: -10px;
-    right: 10px;
-    transform: translateX(0);
+    right: 15px; 
     border: 6px solid;
-    border-color: var(--main-black) transparent transparent transparent
+    border-color: var(--main-black) transparent transparent transparent;
 }
 
 /* End Skills */
@@ -1203,7 +1204,7 @@ nav ul li a:focus-visible {
 
 
 .pricing .pricing-content .plan {
-    display: flex;
+   display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
@@ -1211,6 +1212,7 @@ nav ul li a:focus-visible {
     flex: 1;
     min-width: 250px;
     position: relative;
+    overflow: hidden; 
 }
 
 .pricing .pricing-content .plan::before {
